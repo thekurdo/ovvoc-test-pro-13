@@ -1,0 +1,13 @@
+{
+  "name": "ovvoc-test-pro-13",
+  "version": "1.0.0",
+  "description": "Log formatter CLI with chalk styling",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/index.test.js"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
+  }
+}
