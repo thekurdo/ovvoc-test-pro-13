@@ -1,7 +1,7 @@
-const chalk = require('chalk');
-const { formatLog, formatTable, LEVEL_COLORS } = require('../src/formatter');
-const { colorize, createTheme } = require('../src/colorizer');
-const { main } = require('../src/index');
+import chalk from 'chalk';
+import {  formatLog, formatTable, LEVEL_COLORS  } from '../src/formatter.js';
+import {  colorize, createTheme  } from '../src/colorizer.js';
+import {  main  } from '../src/index.js';
 
 let passed = 0;
 let failed = 0;

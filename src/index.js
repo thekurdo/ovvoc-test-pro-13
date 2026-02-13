@@ -1,6 +1,6 @@
-const chalk = require('chalk');
-const { formatLog, formatTable } = require('./formatter');
-const { colorize } = require('./colorizer');
+import chalk from 'chalk';
+import {  formatLog, formatTable  } from './formatter.js';
+import {  colorize  } from './colorizer.js';
 
 function main() {
   const logs = [
@@ -20,8 +20,8 @@ function main() {
   console.log('\n' + colorize('Custom styled output', 'rainbow'));
 }
 
-module.exports = { main };
-
-if (require.main === module) {
+export {  main  };
+export default {  main  };
+if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }

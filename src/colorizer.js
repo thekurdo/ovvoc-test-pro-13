@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function colorize(text, style) {
   switch (style) {
@@ -16,7 +16,7 @@ function colorize(text, style) {
     case 'muted':
       return chalk.gray.italic(text);
     default:
-      return chalk.keyword('orange')(text);
+      return chalk.hex('orange')(text);
   }
 }
 
@@ -29,4 +29,5 @@ function createTheme(colors) {
   };
 }
 
-module.exports = { colorize, createTheme };
+export {  colorize, createTheme  };
+export default {  colorize, createTheme  };
