@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 const LEVEL_COLORS = {
   info: chalk.blue,
@@ -25,4 +25,5 @@ function formatTable(entries) {
   return [header, separator, ...rows].join('\n');
 }
 
-module.exports = { formatLog, formatTable, LEVEL_COLORS };
+export {  formatLog, formatTable, LEVEL_COLORS  };
+export default {  formatLog, formatTable, LEVEL_COLORS  };
